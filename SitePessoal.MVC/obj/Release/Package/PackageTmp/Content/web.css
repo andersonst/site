@@ -1,0 +1,348 @@
+﻿body, html {
+    /*#ADD8E6*/
+    /*#88CBE0*/
+    /*#FF7100*/
+    /*#ABD6F2*/
+    /*#38AAC4*/
+    /*#F4F4F4*/
+    /*#EDEDED*/
+    background-color: #EDEDED;
+    color: #333;
+    /*font-size: .85em
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;*/
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    padding: 30px 0;
+    /*#F8F8FF*/
+    /*#F5F8FA;*/
+    /*#F2F6F9*/
+    /*#F4F6F7 ;*/
+    background: #FFF;
+    border-bottom: 1px solid #093C4C;
+}
+
+
+
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.list-inline {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+}
+
+.header .social a .fa {
+    font-size: 15px;
+    padding-top: 8px;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nome {
+    font-size: 37px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: #093C4C;
+    /*font-family: 'Franklin Gothic', 'Berlin Sans FB', 'Bernard MT';*/
+}
+
+.profissao {
+    font-size: 22px;
+    /*font-family: Oswald;*/
+    /*font-family: 'Franklin Gothic', 'Berlin Sans FB', 'Bernard MT', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: #093C4C;
+}
+
+.habilidades {
+    width: 90%;
+    margin-left: 5%;
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+
+    .container-cabecalho {
+        padding: 0;
+    }
+
+    .container-social {
+        padding-top: 10px;
+    }
+
+    .div-img {
+        text-align: center;
+    }
+}
+
+
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+
+    .container-cabecalho {
+        padding-top: 40px;
+        padding-left: 60px;
+    }
+
+    .container-social {
+        padding-left: 90px;
+        padding-top: 10px;
+    }
+
+    .contato {
+        padding-left: 90px;
+    }
+}
+
+
+
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+
+    .header .profile-image {
+        margin-right: 10px;
+    }
+
+    .container-cabecalho {
+        padding-top: 40px;
+        padding-left: 30px;
+    }
+
+    .container-social {
+        padding-left: 0;
+        /*padding-top: 20px;*/
+    }
+
+    .contato {
+        padding-left: 0;
+    }
+
+  
+   
+}
+
+@media (min-width:1400px){
+    .container{
+        width:1270px;
+    }
+}
+
+
+.container-livros{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+ img.img-livros {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 123px;
+        height: 177px;
+    }
+
+.list-inline > li a {
+    width: 33px;
+    height: 33px;
+    display: inline-block;
+    background-clip: padding-box;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 5px;
+}
+
+.list-inline > li {
+    display: inline-block;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+@media (max-width: 767px) {
+    .container-img {
+        text-align: center;
+    }
+
+    .profile-image {
+        float: none !important;
+        margin: 0 auto;
+    }
+
+    .container-descricao {
+        text-align: center;
+    }
+
+    .container-social {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .contato {
+        text-align: center;
+    }
+
+    .container-cabecalho {
+        padding: 0;
+    }
+
+    .row {
+        margin: auto 0;
+    }
+
+    .div-img {
+        text-align: center;
+    }
+}
+
+.livros {
+    text-align: center;
+}
+
+.carousel-control.left {
+    background: transparent;
+}
+
+.carousel-control.right {
+    background: transparent;
+}
+
+.facebook {
+    background-color: #45619D;
+}
+
+    .facebook:hover {
+        background-color: #385691;
+    }
+
+.linkedin {
+    background: #1985BC;
+}
+
+    .linkedin:hover {
+        background-color: #197AAA;
+    }
+
+.google-plus {
+    background: #D73D32;
+}
+
+    .google-plus:hover {
+        background: #CE3D33;
+    }
+
+.twitter {
+    background: #0099CC;
+}
+
+    .twitter:hover {
+        background: #038EBC;
+    }
+
+.adobe-reader {
+    background: #F70C0C;
+}
+
+    .adobe-reader:hover {
+        background: #E51212;
+    }
+
+.contato-email {
+    font-size: 14px;
+    /*font-weight: bold;*/
+    color: #093C4C;
+}
+
+.section-format {
+    background-color: #fff;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #D1D4D6;
+}
+
+.section-conteudo {
+    padding: 20px;
+}
+
+.linha {
+    color: #093C4C;
+    font-size: 20px;
+    border-bottom: 1px solid #EA6E3C;
+    margin-top: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+.texto {
+    font-size: 15px;
+    /*font-weight: 400;*/
+    /*#565252;*/
+    /*#565252*/
+    /*color: #535556;*/
+    color: #333;
+    line-height: 1.5;
+}
+
+.escolaridade {
+    font-weight: 700;
+    color: #093C4C;
+}
+
+.exp-profissional {
+    margin-bottom: 25px;
+    color: #333;
+}
+
+
+.div-img {
+    width: 180px;
+    height: 180px;
+    padding: 4px 4px;
+    border: 1px solid #c1c1c1;
+    border-radius: 15px;
+}
+
+.rodape {
+    height: 50px;
+    background-color: #093C4C;
+    color: #EA6E3C;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 15px;
+    border-top: 2px solid #EA6E3C;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('your/path/fontawesome-webfont.eot?v=3.0.1');
+    src: url('your/path/fontawesome-webfont.eot?#iefix&v=3.0.1') format('embedded-opentype'), url('your/path/fontawesome-webfont.woff?v=3.0.1') format('woff'), url('your/path/fontawesome-webfont.ttf?v=3.0.1') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

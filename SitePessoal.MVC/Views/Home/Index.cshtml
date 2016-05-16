@@ -1,0 +1,502 @@
+﻿@*@{
+        ViewBag.Title = "Home Page";
+    }*@
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Anderson Tavares, Anderson Silva Tavares" />
+    <meta name="keywords" content="ASP.Net, MVC, SQL Server" />
+    <meta content="IE-edge" http-equiv="X-UA-Compatible" />
+    <title>Anderson Tavares</title>
+
+    <link href="/icone.ico" rel="shortcut icon" />
+
+    <script src="/Scripts/jquery-1.11.3.min.js"></script>
+
+    <script src="/Scripts/graficos-js/highcharts.js"></script>
+    <script src="/Scripts/graficos-js/highcharts-3d.js"></script>
+    <script src="/Scripts/graficos-js/highcharts-more.js"></script>
+
+    <script src="/Scripts/bootstrap.js"></script>
+    <script src="/Scripts/grafico.js"></script>
+
+    <link href="/Content/bootstrap.css" rel="stylesheet" />
+    <link href="/Content/web.css" rel="stylesheet" />
+    @*<link href="/Content/bootstrap-theme.min.css" rel="stylesheet" />*@
+
+    @*<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />*@
+
+    <link href="/Content/font-awesome.min.css" rel="stylesheet" />
+
+    <link href="/Content/font.css" rel="stylesheet" />
+
+    <meta name="viewport" content="width=device-width" />
+
+    @Styles.Render("~/Content/css")
+
+    @Scripts.Render("~/bundles/jquery")
+
+    @*@Styles.Render("~/Content/font-awesome.min")*@
+
+    @*@Scripts.Render("~/bundles/modernizr")*@
+    @*@Scripts.Render("~/bundles/bootstrap")*@
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+
+            $("#front").animate({
+                width: "80%"
+            }, 2000);
+            $("#mvc").animate({
+                width: "80%"
+            }, 2000);
+            $("#sqlserver").animate({
+                width: "80%"
+            }, 2000);
+            $("#oracle").animate({
+                width: "75%"
+            }, 2000);
+            $("#webapi").animate({
+                width: "75%"
+            }, 2000);
+            $("#entity").animate({
+                width: "75%"
+            }, 2000);
+            $("#nhibernate").animate({
+                width: "75%"
+            }, 2000);
+            $("#java").animate({
+                width: "70%"
+            }, 2000);
+            $("#android").animate({
+                width: "70%"
+            }, 2000);
+        });
+    </script>
+
+</head>
+<body>
+
+    <header class="header">
+        <!--Aqui retirei row-->
+        <div class="container">
+
+
+            <div class="row">
+                <div class="container-img img-responsive col-xs-12 col-sm-4 col-md-2 pull-left">
+                    <center>
+                        <div class="div-img">
+                            <img class="profile-image" style="width:170px; height:170px; background-color: transparent; border-radius:15px;" src="/Images/anderson_003.jpg" />
+                        </div>
+                    </center>
+                </div>
+
+                <div class="col-xs-12 col-sm-7 col-md-10 container-cabecalho">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8">
+                            <section class="container-descricao">
+                                <span class="nome">Anderson Tavares</span>
+
+                            </section>
+
+                            <section class="container-descricao"><span class="profissao">Analista Desenvolvedor</span></section>
+
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                            <aside class="container-social">
+                                <ul class="list-inline">
+                                    <li>
+                                        <a target="_blank" href="https://www.facebook.com/anderson.tavares.21" class="facebook">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://www.linkedin.com/in/anderson-tavares-490905a4" class="linkedin">
+                                            <i class="fa fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://plus.google.com/u/0/+AndersonTavares01" class="google-plus">
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://twitter.com/a_tavares01" class="twitter">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="/doc/modelo_curriculo_anderson.pdf" class="adobe-reader">
+                                            <i class="fa fa-file-pdf-o"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </aside>
+                            <!--Alteração aqui-->
+                            <aside class="contato">
+                                <div style="width:100%; float:left">
+                                    @*<img src="/Images/telefone_3_1.png" style="width:20px; height: 17px;" />*@
+                                    <i class="fa fa-mobile-phone"></i>
+                                    <span class="contato-email">(21) 96874-3481</span>
+                                </div>
+                                <div style="width:100%; float:left">
+
+                                    @*<img src="/Images/email_3_1.png" style="width:13px; height: 13px;" />*@
+                                    <i class="fa fa-at"></i>
+                                    <span class="contato-email">anderson.tavares29@gmail.com</span>
+                                </div>
+                            </aside>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Aqui retirei row-->
+    <div class="container" style="padding-top:30px; padding-bottom:30px;">
+        <div class=" row">
+            <div class="col-xs-12 col-sm-12 col-md-8">
+
+                <section class="section-format">
+                    <div class="section-conteudo">
+                        <h2 class="linha">Apresentação</h2>
+                        <h4 class="texto">
+                            Bem Vindos ao Site!!
+                            <h4 class="texto">
+                                <p>
+                                    Em primeiro lugar gostaria de agradecer a visita e através deste meio de comunicação venho informar as minhas qualificações
+                                    falar um pouco sobre mim e minhas experiências profissonais. Iniciei minha carreira profissional de informática por gostar do que faço
+                                    e também me senti muito interessado por trabalhar com lógica de programação e desde então
+                                    venho acompanhando as inovações do dia a dia deste mercado de TI
+
+
+
+                                </p>
+                            </h4>
+                            <h4 class="texto">
+                                <p>
+                                    Atualmente trabalho com a linguagem C# e também estudo as inovações que o mercado nos apresenta CSS, HTML, javascript, MVC ASP.Net.
+                                    Trabalhei em empresas que havia necessidade de prestar manutenção de sistema e criar novos projetos a cada uma delas agradeço
+                                    ao meu crescimento profissional que retribui com meu empenho e dedicação. Estou iniciando o estudo de programação voltado para mobile para Android, Java e PHP
+                                    sempre com a perspectiva de melhorar a cada dia em vista de se tornar o profissional cada vez mais qualificado.
+                                </p>
+
+                            </h4>
+                            <h4 class="texto">
+
+                                Bem por enquanto é isso um forte abraço!!
+                            </h4>
+                        </h4>
+                    </div>
+                </section>
+                <section class="section-format">
+
+                    <div class="section-conteudo">
+
+                        <header>
+                            <h2 class="linha">Formação Acadêmica</h2>
+                        </header>
+                        <h4 class="texto escolaridade">
+                            <i class="fa fa-graduation-cap fa"></i>
+                            Análise e Desenvolvimento de Sistema
+                        </h4>
+                        <h4 class="texto">Uniabeu Centro Universitário (2008/2012)</h4>
+                    </div>
+                </section>
+                <section class="section-format">
+                    <div class="section-conteudo">
+                        <h2 class="linha">Experiência Profissional</h2>
+                        <h4 class="texto escolaridade">
+
+                            Target Work (04/2015 - 12/2015)
+                        </h4>
+                        <h4 class="texto exp-profissional">
+
+                            Desenvolvedor de sistemas para conteúdo web
+                            para setor administrativo de um cliente terceirizado criando serviços e integração
+                            com sistemas coorporativos com banco de dados SQL Server e linguagem de programação C# ASP.Net MVC.
+                            <br />
+                            Tecnologias: Entity Framework, Web Api, WCF, Web Service, Json, Jquery, BootStrap, HTML5.
+
+
+
+
+                        </h4>
+                        <h4 class="texto escolaridade">
+
+                            Toque a Campainha (10/2013 - 04/2015)
+                        </h4>
+                        <h4 class="texto exp-profissional">
+
+                            Analista e programador para sistema de gestão empresarial prestando manutenção e criando novas funcionalidades
+                            para os diversos setores da empresa (Comercial, Operacional, Financeiro, Vendas) com as seguintes atribuições
+                            Manutenção de Ordens de Compra e de Serviço, controle de estoque, verificação de serviços referente ao estoque
+                            junto ao um sistema integrado (WMS), exportação de dados do SQL Server para Oracle atendendo a demanda de caixa do Setor Financeiro,
+                            alteração de pedidos como data de entrega, forma de pagamento.
+                            Projetos em ASP.Net MVC para Setor Financeiro e Operacional principais linguagens de programação VB6 e MVC ASP.Net e bancos de dados SQL Server, MySQL e Oracle.
+
+
+                            <br />
+                            Tecnologias: Entity Framework, WCF, Web Service, Json, Jquery, BootStrap, HTML5.
+
+
+                        </h4>
+                        <h4 class="texto escolaridade">
+
+                            TEES Engenharia e Sistemas (03/2013 - 09/2013)
+                        </h4>
+                        <h4 class="texto exp-profissional">
+
+
+                            Programador para sistema web de criação de relatórios e módulos para uma instituição do governo federal.
+                            Criação e manutenção de scripts do banco de dados e criação de funcionalidades linguagem de programação C# e banco de dados
+                            SQL Server.
+
+                            <br />
+                            Tecnologias: Entity Framework, WCF, Web Service, Json, Jquery.
+
+
+                        </h4>
+                        <h4 class="texto escolaridade">
+
+                            Montreal Informática (09/2011 - 02/2013)
+                        </h4>
+                        <h4 class="texto exp-profissional">
+
+
+                            Responsável pela criação da estrutura de projeto, leitura e aplicação dos Casos de Uso dos projeto,
+                            entrega da demanda por Sprint (Scrum).
+                            Desenvolvimento em aplicações em WebForms com consultas em bancos de dados DB2 e SQL Server, modelo de linguagem UML.
+                            Projetos desenvolvidos para o governo federal e estadual.
+
+                            <br />
+                            Tecnologias: ASP.Net, Nhibernate, Active Record, Jquery.
+
+
+                        </h4>
+
+                    </div>
+                </section>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4">
+
+                <aside class="section-format">
+                    <div class="section-conteudo">
+
+                        <header>
+                            <h2 class="linha">Objetivo Profissional</h2>
+                        </header>
+                        <h4 class="texto">
+                            Programador .NET C#. Graduado em Análise de Sistemas.
+                            Desenvolver e efetuar manutenção em sistemas em MVC ASP.Net e SQL Server. Expertise em análise de impactos e riscos,
+                            elaboração de cronogramas, padronização de procedimentos e gestão de projetos.
+                        </h4>
+                    </div>
+                </aside>
+                <aside class="section-format">
+
+                    <div class="section-conteudo">
+                        <header>
+                            <h2 class="linha">Habilidades</h2>
+                        </header>
+
+                        <div id="habilidades"></div>
+                        @*<h3 class="texto escolaridade">Front End</h3>
+                    <div class="progress">
+
+                        <div id="front" class="progress-bar progress-bar-success" style="width:0%">
+                            <center>80%</center>
+                        </div>
+                    </div>
+                    <h3 class="texto escolaridade">MVC ASP.Net</h3>
+                    <div class="progress">
+
+                        <div id="mvc" class="progress-bar progress-bar-success" style="width:0%">
+                            80%
+                        </div>
+                    </div>
+                    <h3 class="texto escolaridade">SQL Server</h3>
+                    <div class="progress">
+
+                        <div id="sqlserver" class="progress-bar progress-bar-success" style="width:0%">
+                            80%
+                        </div>
+                    </div>
+                    <h3 class="texto escolaridade">Oracle</h3>
+                    <div class="progress">
+
+                        <div id="oracle" class="progress-bar" style="width:0%">
+                            75%
+                        </div>
+                    </div>
+                    <h3 class="texto escolaridade">Web Api</h3>
+                    <div class="progress">
+
+                        <div id="webapi" class="progress-bar" style="width:0%">
+                            75%
+                        </div>
+                    </div>
+                    <h3 class="texto escolaridade">Entity Framework</h3>
+                    <div class="progress">
+
+                        <div id="entity" class="progress-bar progress-bar-warning" style="width:0%">
+                            75%
+                        </div>
+                    </div>
+                    <h3 class="texto escolaridade">Nhibernate(Active Record e Fluent)</h3>
+                    <div class="progress">
+
+                        <div id="nhibernate" class="progress-bar progress-bar-warning" style="width:0%">
+                            75%
+                        </div>
+                    </div>
+                    <h3 class="texto escolaridade">Java EE</h3>
+                    <div class="progress">
+
+                        <div id="java" class="progress-bar progress-bar-info" style="width:0%">
+                            70%
+                        </div>
+                    </div>
+                    <h3 class="texto escolaridade">Android</h3>
+                    <div class="progress">
+
+                        <div id="android" class="progress-bar progress-bar-info" style="width:0%">
+                            70%
+                        </div>
+                    </div>*@
+
+                    </div>
+                </aside>
+
+                <!-- altera aqui fechando div coluna-->
+            </div>
+            <div class="col-xs-12 col-sm-7 col-md-4 ">
+                <aside class="section-format">
+
+                    <div class="section-conteudo">
+                        <header>
+                            <h2 class="linha">Cursos de Especialização</h2>
+                        </header>
+                        <h4 class="texto escolaridade">
+
+                            MCSD Web Applications .Net
+                        </h4>
+                        <h4 class="texto">Instituto Infnet (2015)</h4>
+                        <h4 class="texto escolaridade">
+
+                            Oracle PL/SQL
+                        </h4>
+                        <h4 class="texto">Trainning (2014)</h4>
+                        <h4 class="texto escolaridade">
+
+                            Java
+                        </h4>
+                        <h4 class="texto">TreinaWeb (2014)</h4>
+                        <h4 class="texto escolaridade">
+
+                            SQL Server
+                        </h4>
+                        <h4 class="texto">Digidata (2008)</h4>
+
+                    </div>
+                </aside>
+            </div>    
+            <div class="col-xs-12 col-sm-5 col-md-4 ">
+                <aside class="section-format">
+                    <div class="section-conteudo">
+                        <header>
+                            <h2 class="linha">Livros Referência</h2>
+                        </header>
+                        <div id="livrosCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            @*<ol class="carousel-indicators">
+                                <li data-target="#livrosCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#livrosCarousel" data-slide-to="1"></li>
+                                <li data-target="#livrosCarousel" data-slide-to="2"></li>
+                                
+                            </ol>*@
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <div class="container-livros">
+                                        <img src="~/Images/Java_Web.jpg" class="img-livros">
+                                    </div>
+                                    <div class="container-livros">
+                                        <h5 class="texto escolaridade livros">
+                                            Programação Java 
+                                            para Web
+                                        </h5>
+
+                                    </div>
+                                </div>
+                                <div class="item row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <img src="~/Images/livro_android.jpg" class="img-livros">
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <h5 class="texto escolaridade livros">
+                                            Google Android
+                                        </h5>
+                                    </div>
+                                </div>
+
+                                <div class="item row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+
+                                        <img src="~/Images/20480.png" class="img-livros">
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <h5 class="texto escolaridade livros">
+                                            MCSD Web Applications
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#livrosCarousel" role="button" data-slide="prev">
+                                <span class="icon-prev"></span>
+                                @*<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>*@
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#livrosCarousel" role="button" data-slide="next">
+                                <span class="icon-next"></span>
+                                @*<span class="glyphicon-chevron-right" aria-hidden="true"></span>*@
+                                <span class="sr-only">Next</span>
+
+                            </a>
+                        </div>
+                    </div>
+
+                </aside>
+            </div>
+
+
+                @*<aside class="section-format">
+
+                <div class="section-conteudo">
+                    <header>
+                        <h2 class="linha">Portfolio</h2>
+                    </header>
+                    <h4 class="texto">Em construção</h4>
+                </div>
+            </aside>*@
+
+            </div>
+    </div>
+
+
+    <footer class="rodape">
+        <span>2016 - Anderson Tavares</span>
+    </footer>
+
+
+</body>
+</html>
